@@ -2,6 +2,10 @@
 
 COMMANDS
 
+## create project Foundry
+
+forge --init
+
 source .env # add enviroment variables a nuestro shell
 echo $PRIVATE_KEY # show
 forge script script/DeploySimpleStorage.s.sol --rpc-url $RPC_URL --broadcast --private-key $PRIVATE_KEY
@@ -39,3 +43,9 @@ cast --to-base 0x000000000000000000000000000000000000000000000000000000000000007
 ## exec transaction on sepolia
 
 forge script script/DeploySimpleStorage.s.sol:DeploySimpleStorage --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY_METAMASK --broadcast
+
+## format code
+
+forge fmt
+
+//// MEMPOOL => It is the place where transactions go before sending.
